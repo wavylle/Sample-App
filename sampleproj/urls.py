@@ -19,4 +19,5 @@ from sampleapp import views
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("testpost", views.testpost, name='testpost'),
+    path('', views.index),
 ]

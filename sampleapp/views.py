@@ -15,3 +15,7 @@ def testpost(request):
         result = a + b
         json_data = {'answer': result}
         return JsonResponse(result)
+
+
+def index(request):
+    return HttpResponse('hello')
